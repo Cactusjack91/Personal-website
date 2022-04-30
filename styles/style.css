@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -19,7 +20,8 @@
   --first-color-lighten: #fff;
 
   /*===== Font and typography =====*/
-  --body-font: 'Poppins', sans-serif;
+  /* --body-font: 'Poppins', sans-serif; */
+  --body-font: 'Montserrat', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -179,6 +181,10 @@ img{
 .nav__logo, .nav__toggle{
     color: var(--first-color-lighten);
 }
+.nav__logo img{
+  max-height: 50px;
+  width: 100%;
+}
 .nav__toggle{
     font-size: 1.3rem;
     cursor: pointer;
@@ -195,7 +201,7 @@ img{
     position: relative;
 
 }
-.active--link::after{
+/* .active--link::after{
   content: " ";
   position: absolute;
   bottom: -0.7rem;
@@ -205,7 +211,7 @@ img{
   height: 3px;
   background-color: var(--first-color-light);
 
-}
+} */
 
 /* Change background header */
 .scroll--header{
