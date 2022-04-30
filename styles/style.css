@@ -107,7 +107,7 @@ img{
 
 /*===== CLASS CSS =====*/
 .section{
-    padding: 4rem 0 4rem 0;
+    padding: 3rem 0 4rem 0;
 }
 .section-title, .section-subtitle{
     text-align: center;
@@ -264,7 +264,8 @@ img{
 }
 .home__container{
   position: relative;
-  height: calc(100vh- var(--header-height));
+  /* height: calc(100vh- var(--header-height)); */
+  height: 90vh;
   grid-template-rows: repeat(2,max-content);
   align-content: space-around;
   row-gap: 2rem;
@@ -289,7 +290,7 @@ img{
 }
 .home__professional{
  font-size: .940rem;
- margin-bottom: var(--mb-3);
+ margin-bottom: var(--mb-2);
 }
 .home__img{
   position: absolute;
@@ -352,6 +353,8 @@ img{
   padding:0.75rem 1rem;
   border-radius: 0.25rem;
   transition: 0.3s;
+  margin-top: 0.5rem;
+
 }
 .button:hover {
   background-color: var(--first-color-dark);
@@ -446,8 +449,8 @@ color: var(--first-color);
 
 /*===== FOOTER =====*/
 .footer{
-  background-color: var(--first-color-dark);
-  color: var(--first-color-lighten);
+  background-color: #000;
+  color: #fff;
   text-align: left;
 }
 .footer__container{
@@ -474,8 +477,8 @@ margin-bottom: var(--mb-3);
 color: var(--first-color-light);
 }
 .footer__copy{
-  font-size: var(--smaller-font-size);
-  color: var(--first-color-light);
+  font-size: var(--normal-font-size);
+  color: #fff;
 }
 #welcome-section{
   height:100vh;
