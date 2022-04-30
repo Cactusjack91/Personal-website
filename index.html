@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>Portfolio Personal Complete</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.7.2/css-doodle.min.js"></script>
 </head>
 
 <body>
@@ -51,8 +53,9 @@
 
         <!--===== HOME =====-->
         <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
+            <!-- <div class="home__container bd-container bd-grid"> -->
+            <div class="home__container">
+                <!-- <div class="home__data">
                     <span class="home__greeting">Hello, My Name is</span>
                     <h1 class="home__name">Aden Chan</h1>
                     <span class="home__professional">UX/UI Designer</span>
@@ -72,7 +75,33 @@
 
                 </div>
 
-                <div class="noise-bg"></div>
+                <div class="noise-bg"></div> -->
+
+                <css-doodle>
+                    :doodle {
+                    @grid: 15 / 100vmax;
+                    background: #000;
+                    cursor: pointer;
+
+                    }
+                    :doodle(:hover) { --s: 1 ; }
+
+                    :after {
+                    content: @pick(a,A);
+                    font-size: 3vmax;
+                    color: #fff;
+                    transform: scale(@rand(.2, .9));
+
+                    }
+
+                    transition: .5s cubic-bezier(.175, .885, .32, 1.275);
+                    transition-delay: @rand(650ms);
+                    transform: translateY(calc(var(--s) * 100%)) rotate(calc(var(--s) * 360deg));
+
+
+
+                </css-doodle>
+
 
                 <!-- <div class="home__img">
                     <img src="https://images.unsplash.com/photo-1541710887094-e940650f6c42?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80"
@@ -298,7 +327,7 @@
                     <a href="#" class="footer__link"><i class='bx bxl-codepen'></i></a>
                     <a href="#" class="footer__link"><i class="fas fa-bolt"></i></a>
                 </div> -->
-                <p class="footer__copy">&#169; 2021 Aden Chan</p>
+                <p class="footer__copy">Aden Chan&#0176</p>
             </div>
         </footer>
 
