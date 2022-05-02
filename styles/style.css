@@ -1,6 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -160,7 +161,7 @@ img{
         padding-top: 1.5rem;
         text-align: center;
         background-color: #000;
-        transition: 0.4s;
+        transition: 0.3s;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         border-radius: 0 0 1rem 1rem;
     }
@@ -193,6 +194,7 @@ img{
 }
 /* Show menu */
 .show--menu{
+  /* top: calc(var(--header-height) + 1rem); */
   top:var(--header-height);
 }
 
@@ -451,15 +453,19 @@ color: var(--first-color);
 .footer{
   background-color: #000;
   color: #fff;
-  text-align: left;
+  /* text-align: left; */
+
 }
 .footer__container{
+    display: flex;
+  justify-content: space-between;
   padding:2rem 0;
 }
 .footer__title{
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-semi-bold);
+  font-style: italic;
 }
 .footer__desc{
 margin-bottom: var(--mb-3);
@@ -598,6 +604,9 @@ color: var(--first-color-light);
    display: flex;
    justify-content: space-between;
    }*/
+   .show--menu{
+    top: calc(var(--header-height) + 1rem);
+  }
 }
 
 @media screen and (min-width: 1024px){
