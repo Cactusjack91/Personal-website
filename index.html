@@ -12,8 +12,9 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- ===== Fontawsome ICONS ===== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/9b4c55f565.js" crossorigin="anonymous"></script>
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./styles/style.css">
@@ -74,13 +75,13 @@
                     content: @pick(a,A);
                     font-size: 3vmax;
                     color: #fff;
-                    transform: scale(@rand(.2, .9));
+                    transform: scale(@rand(.2, 0.9));
 
                     }
 
                     transition: .5s cubic-bezier(.175, .885, .32, 1.275);
                     transition-delay: @rand(650ms);
-                    transform: scaleX(calc(var(--s) * 100%)) rotate(calc(var(--s) * 360deg));
+                    transform: scaleX(calc(var(--s) * -100%)) rotate(calc(var(--s) * 360deg));
 
                 </css-doodle>
 
@@ -94,7 +95,7 @@
             <div class="portfolio__nav">
                 <span class="portfolio__item active--portfolio" data-filter="all">All</span>
                 <span class="portfolio__item" data-filter=".ux">UI/UX</span>
-                <span class="portfolio__item" data-filter=".app">App</span>
+                <!-- <span class="portfolio__item" data-filter=".app">App</span> -->
                 <span class="portfolio__item" data-filter=".web">Design</span>
             </div>
             <div class="portfolio__container bd-grid">
@@ -110,7 +111,7 @@
                     </div>
 
                 </div>
-                <div class="portfolio__content mix ux">
+                <!-- <div class="portfolio__content mix ux">
                     <a href="#" class=""><img src="./img/superstarAutomart.png" alt="" class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">UI/UX</span>
@@ -120,7 +121,7 @@
                         <a href="#" class="button button-link">Read More</a>
                     </div>
 
-                </div>
+                </div> -->
                 <div class="portfolio__content mix ux">
                     <a href="https://www.behance.net/gallery/137518955/Yours-Truly-Entertainment" class=""><img
                             src="./img/yours.png" alt="" class="portfolio__img"></a>
@@ -185,7 +186,6 @@
         <footer class="footer">
             <div class="footer__container bd-container">
                 <p class="footer__copy">adc&#0176</p>
-                <p class=".footer__title">Good design is science.</p>
             </div>
         </footer>
 
